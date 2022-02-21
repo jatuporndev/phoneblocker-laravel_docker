@@ -125,8 +125,5 @@ class MemberController extends Controller
         return redirect('admin/member')->with('flash_message', 'member deleted!');
     }
 
-    public function test2(){
-
-    }
-
+    
 }
