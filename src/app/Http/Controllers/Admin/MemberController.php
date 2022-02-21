@@ -122,4 +122,11 @@ class MemberController extends Controller
     {
         member::destroy($id);
 
-        return redirect('admin/member')->with('flash_message', '
+        return redirect('admin/member')->with('flash_message', 'member deleted!');
+    }
+
+    public function test2(){
+
+    }
+
+}
