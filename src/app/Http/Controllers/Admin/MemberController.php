@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Models\member;
 use Illuminate\Http\Request;
 
-class memberController extends Controller
+class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.

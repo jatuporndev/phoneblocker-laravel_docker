@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Models\reportnumber;
 use Illuminate\Http\Request;
 
-class reportnumberController extends Controller
+class ReportnumberController extends Controller
 {
     /**
      * Display a listing of the resource.

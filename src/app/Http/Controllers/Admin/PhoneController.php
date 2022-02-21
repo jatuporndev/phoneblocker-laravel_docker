@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Models\phone;
 use Illuminate\Http\Request;
 
-class phoneController extends Controller
+class PhoneController extends Controller
 {
     /**
      * Display a listing of the resource.
