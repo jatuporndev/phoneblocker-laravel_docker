@@ -20,6 +20,7 @@ class MemberController extends Controller
         $keyword = $request->get('search');
         $perPage = 25;
         $i=0;//test commit
+        $y=0;//test commit2
 
         if (!empty($keyword)) {
             $member = member::where('id', 'LIKE', "%$keyword%")
