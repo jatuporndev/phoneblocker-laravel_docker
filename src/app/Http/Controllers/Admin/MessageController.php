@@ -12,7 +12,7 @@ class MessageController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * 2
      * @return \Illuminate\View\View
      */
     public function index(Request $request)

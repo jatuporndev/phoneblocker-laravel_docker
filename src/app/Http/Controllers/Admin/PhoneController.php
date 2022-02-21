@@ -12,7 +12,7 @@ class PhoneController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     *w
      * @return \Illuminate\View\View
      */
     public function index(Request $request)
