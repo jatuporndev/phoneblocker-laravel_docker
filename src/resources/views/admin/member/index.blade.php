@@ -10,12 +10,6 @@
                 <div class="card">
                     <div class="card-header">Member  </div>
 
-                    <!--เทสวันเวลา -->
-                    <?php 
-             
-                        $free_trial= date_create('now', timezone_open('Asia/Bangkok'))->format('d-m-Y H:i:s');
-                        echo $free_trial;
-                        ?>
                       
                         
                     <div class="card-body">

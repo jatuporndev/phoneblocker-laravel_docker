@@ -16,7 +16,6 @@ class memberController extends Controller
 
     public function Register(Request $request)
     {
-     
             //add Register
             $member = new member();
             $member->email = $request->get("email"); 
