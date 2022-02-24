@@ -54,7 +54,8 @@ class LoginController extends Controller
             return redirect('admin/phone');
         
     }else{
-        return redirect()->route('home');
+            return redirect('admin/phone');
+        
     }
     }else{
          return redirect()->route('login')->with('error', 'Email-address and Password are wrong.');
