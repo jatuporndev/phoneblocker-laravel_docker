@@ -7,17 +7,18 @@ use Illuminate\Support\Facades\Schema;
 class CreatePhoneTable extends Migration
 {
     /**
-     * Run the migrations.
+     * Run the migrations.lllll
      *
      * @return void
      */
     public function up()
     {
         Schema::create('phone', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id();
             $table->string('phonenumber', 20);
             $table->string('name', 50);
-            $table->timestamps()->default('current_timestamp()');
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
             $table->timestamp('delete_at')->nullable();
         });
     }

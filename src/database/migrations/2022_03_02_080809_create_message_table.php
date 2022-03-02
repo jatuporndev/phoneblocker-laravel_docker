@@ -14,10 +14,11 @@ class CreateMessageTable extends Migration
     public function up()
     {
         Schema::create('message', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id();
             $table->string('addressmessage', 200);
             $table->string('name', 200);
-            $table->timestamps();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
             $table->timestamp('delete_at')->nullable();
         });
     }

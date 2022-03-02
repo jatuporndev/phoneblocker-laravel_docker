@@ -14,15 +14,16 @@ class CreateMemberTable extends Migration
     public function up()
     {
         Schema::create('member', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id();
             $table->string('email', 100);
             $table->string('username', 50);
             $table->string('password', 50);
             $table->integer('package');
             $table->string('free_trial', 50);
-            $table->timestamps()->default('current_timestamp()');
             $table->timestamp('delete_at')->nullable();
             $table->date('exp_date')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
         });
     }
 

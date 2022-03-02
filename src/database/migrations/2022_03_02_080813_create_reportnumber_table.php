@@ -14,12 +14,13 @@ class CreateReportnumberTable extends Migration
     public function up()
     {
         Schema::create('reportnumber', function (Blueprint $table) {
-            $table->integer('id')->primary();
+            $table->id();
             $table->string('address', 100);
             $table->string('detail', 500);
             $table->integer('status');
-            $table->timestamps();
             $table->timestamp('delete_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
+            $table->timestamp('created_at')->nullable();
         });
     }
 
