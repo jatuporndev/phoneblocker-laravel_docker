@@ -15,6 +15,7 @@
     },
     "require-dev": {
         "appzcoder/crud-generator": "^3.2",
+        "bennett-treptow/laravel-migration-generator": "^4.2",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "kitloong/laravel-migrations-generator": "^5.2",
