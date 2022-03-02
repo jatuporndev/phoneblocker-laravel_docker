@@ -13,7 +13,7 @@ services:
         - GID=${GID:-1000}
     container_name: nginx
     ports:
-      - 80:80
+      - 807:80
     volumes:
       - ./src:/var/www/html:delegated
     depends_on:
